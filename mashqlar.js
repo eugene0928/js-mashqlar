@@ -91,21 +91,17 @@
 
 //  1-masala
 
-// const numbers = [6, 2, 3, 4];
+const numbers = [6, 2, 3, 4];
 
-// function sum(...arr){
-//     let sum_all = 0;
-//     if(arr.length > 1){
-//         for(let i of arr){
-//             sum_all += i;
-//         }
-//         return sum_all;
-//     } else {
-//         for(let i of arr[0]){
-//             sum_all += i;
-//         }
-//     }
-//     return sum_all;
-// }
+function sum(...a){
+    let sum = (a, b) => a+b;
 
-// console.log(sum(1, 2, 3, 4));
+    if(a.length !== 1){
+        return a.reduce(sum);
+    } else {
+        return a[0].reduce(sum);
+    }
+}
+
+console.log(sum(numbers));
+console.log(sum(1, 2, 3, 4));
