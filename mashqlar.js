@@ -23,22 +23,89 @@
 
 //4-masala
 
-function except(arr, item){
-    const new_arr = [];
-    if(typeof item === 'object'){
-        for (let i of arr) {
-            if(item.includes(i)) continue;
-            new_arr.push(i);
-        }
-    } else {
-        for (let i of arr) {
-            if(i === item) continue;
-            new_arr.push(i);
-        }
-    }
-    return new_arr;
-}
+// function except(arr, item){
+//     const new_arr = [];
+//     if(typeof item === 'object'){
+//         for (let i of arr) {
+//             if(item.includes(i)) continue;
+//             new_arr.push(i);
+//         }
+//     } else {
+//         for (let i of arr) {
+//             if(i === item) continue;
+//             new_arr.push(i);
+//         }
+//     }
+//     return new_arr;
+// }
 
-const numbers = [1, 2, 3, 4];
-console.log(except(numbers, [2, 3]));
+// const numbers = [1, 2, 3, 4];
+// console.log(except(numbers, [2, 3]));
 
+// 5-masala
+
+// const arr = [1, 2, 3, 4, 5, 6, 7];
+
+// function move(arr, index, offset) {
+//     let num = arr[index];
+//    arr.splice(index, 1);
+//    arr.splice(offset, 0, num);
+
+//    return arr;
+// }
+
+// console.log(move(arr, 1, 3));
+
+// 6-masala
+
+// function getMax(arr){
+//     return Math.max(...arr);
+// }
+
+// const a = [1, 2, 3, 4];
+// console.log(getMax(a));
+
+// 7-masala
+
+// const movies =[
+//     {title: 'a', year: 2020, rating: 4.6},
+//     {title: 'b', year: 2021, rating: 4.7},
+//     {title: 'c', year: 2020, rating: 4.7},
+//     {title: 'd', year: 2020, rating: 4.5}
+// ]
+
+// function getMovies(arr){
+//     let new_m = [];
+//     for(let i of arr){
+//         if(i['year'] === 2020){
+//             new_m.push(i);
+//         }
+//     }
+//     new_m.sort(function(a, b){
+//         return b.rating - a.rating;
+//     });
+//     return new_m;    
+// }
+
+// console.log(getMovies(movies));
+
+//  1-masala
+
+// const numbers = [6, 2, 3, 4];
+
+// function sum(...arr){
+//     let sum_all = 0;
+//     if(arr.length > 1){
+//         for(let i of arr){
+//             sum_all += i;
+//         }
+//         return sum_all;
+//     } else {
+//         for(let i of arr[0]){
+//             sum_all += i;
+//         }
+//     }
+//     return sum_all;
+// }
+
+// console.log(sum(1, 2, 3, 4));
