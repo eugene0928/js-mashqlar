@@ -111,15 +111,20 @@ let let_to_num = {
 function chess_board(str){
     str = str.split('');
     let num = Number(str[1]);
-    if(let_to_num[str[0]] % 2 !== 0 && num % 2 !== 0){
-        return 'black';
-    } else if(let_to_num[str[0]] % 2 === 0 && num % 2 === 0){
-        return 'black';
-    } else if(let_to_num[str[0]] % 2 !== 0 && num % 2 === 0){
-        return 'white';
-    } else{
-        return "white";
+    if(str.length === 2 && Object.keys(let_to_num).includes(str[0])){
+        if(let_to_num[str[0]] % 2 !== 0 && num % 2 !== 0){
+            return 'black';
+        } else if(let_to_num[str[0]] % 2 === 0 && num % 2 === 0){
+            return 'black';
+        } else if(let_to_num[str[0]] % 2 !== 0 && num % 2 === 0){
+            return 'white';
+        } else{
+            return "white";
+        }
+    } else {
+        return 'Invalid input';
     }
+
 }
 
 console.log(chess_board('d1'))
