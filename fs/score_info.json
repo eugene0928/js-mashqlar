@@ -1,0 +1,23 @@
+[
+    {
+        "id": 1,
+        "studentId": 1,
+        "score": 24,
+        "comment": "yaxshi",
+        "date": "2022-02-23T16:05:18.843Z"
+    },
+    {
+        "id": 2,
+        "studentId": 1,
+        "score": 4,
+        "comment": "rasvo",
+        "date": "2022-02-23T16:05:18.843Z"
+    },
+    {
+        "id": 1,
+        "studentId": 1,
+        "score": 36,
+        "comment": "bravo",
+        "date": "2022-02-23T16:05:18.843Z"
+    }
+]
